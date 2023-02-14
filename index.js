@@ -26,7 +26,7 @@ app.get("/post", (req, res) =>{
     res.render("post")
 })
 
-app.get("/post/new", (req, res) =>{
+app.get("/posts/new", (req, res) =>{
     res.render("create")
 })
 

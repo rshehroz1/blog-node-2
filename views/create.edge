@@ -1,7 +1,7 @@
-@layout("layout.app")
+@layout("layouts.app")
 
 @section("content")
-<header class="masthead" style="background-image: url('assets/img/about-bg.jpg')">
+<header class="masthead" style="background-image: url('/assets/img/about-bg.jpg')">
     <div class="container position-relative px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
@@ -13,4 +13,25 @@
         </div>
     </div>
 </header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <form>
+                <div class="form-floating">
+                    <input type="text" class="form-control" name="title" placeholder="Enter your name ...">
+                    <label>Tiltle</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" name="description" placeholder="Enter your description ...">
+                    <label>Description</label>
+                </div>
+                <div class="form-floating">
+                    <textarea name="content" class="form-control" placeholder="Enter yout content"></textarea>
+                    <label>Content</label>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 @endsection
