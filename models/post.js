@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 
 const PostSchema = new mongoose.Schema({
     title: String,
-    descriptiom: String,
+    description: String,
     content: String,
 
 })

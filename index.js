@@ -26,6 +26,10 @@ app.get("/post", (req, res) =>{
     res.render("post")
 })
 
+app.get("/post/new", (req, res) =>{
+    res.render("create")
+})
+
 app.listen(3000, ()=>{
     console.log("server connect");
 })
